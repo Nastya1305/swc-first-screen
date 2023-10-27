@@ -1,0 +1,227 @@
+.first-screen {
+   height: 100vh;
+   position: relative;
+
+   &__container {
+      padding: 30vh 0 5vh 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__title {
+      max-width: 570px;
+      margin-bottom: 65px;
+
+      font-family: SF Pro Display;
+      font-size: 48px;
+      font-weight: 600;
+      color: $text-black;
+   }
+
+   &__subtitle {
+      max-width: 559px;
+      margin-bottom: 60px;
+
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+   }
+
+   &__connect-btn {
+      margin-bottom: 43px;
+   }
+
+   &__next-btn {
+      width: 54px;
+      height: 54px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 8px;
+      border: 1px solid $text-light-gray;
+      background-color: transparent;
+      cursor: pointer;
+
+      svg {
+         width: 32px;
+         height: 32px;
+      }
+
+      &:hover {
+         align-items: start;
+      }
+   }
+
+   &__decor {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+      display: block;
+      height: 100%;
+      width: 40vw;
+      background: $gradient-purple;
+   }
+
+   &__img-1 {
+      width: 446px;
+      height: 388px;
+      position: absolute;
+      top: 16%;
+      transform: translateX(-60%);
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: -19px;
+         left: 135px;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background: $gradient-purple;
+         box-shadow: 0px 20px 35px #dfe8f4;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 167px;
+         right: 112px;
+         width: 14px;
+         height: 14px;
+         border-radius: 50%;
+         background: $main-red;
+         box-shadow: 0px 20px 35px rgba(90, 50, 50, 0.4);
+      }
+   }
+
+   &__img-2 {
+      width: 230px;
+      height: 269px;
+      position: absolute;
+      top: 56%;
+      transform: translateX(-85%);
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 73px;
+         right: -32px;
+         width: 40px;
+         height: 40px;
+         border-radius: 10px;
+         border: 2px solid $text-light-gray;
+         background: transparent;
+      }
+   }
+
+   &__img-3 {
+      width: 630px;
+      height: 660px;
+      position: absolute;
+      top: 17%;
+      z-index: -2;
+      transform: translateX(5%);
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 44px;
+         left: 119px;
+         width: 22px;
+         height: 22px;
+         border-radius: 50%;
+         background: $main-yellow;
+         box-shadow: 0px 20px 35px rgba(156, 101, 34, 0.3);
+      }
+   }
+
+   &__expert-1 {
+      position: relative;
+      left: -300px;
+      top: 72%;
+      width: 47px;
+      height: 47px;
+      border-radius: 47px;
+      border: 2px solid $main-white;
+
+      background: url("../images/expert-1.jpg");
+      background-size: cover;
+      background-position: center;
+
+      &::before {
+         position: absolute;
+         content: "";
+         z-index: -1;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 65px;
+         height: 65px;
+         background-color: $background-purple;
+         border-radius: 50%;
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         z-index: 1;
+         top: -3px;
+         left: 50%;
+         transform: translate(-49%, -25%) rotate(-30deg);
+         transform-origin: 50% 100%;
+         width: 68px;
+         height: 35px;
+         border-top: 3px solid $main-yellow;
+         border-left: 3px solid $main-yellow;
+         border-right: 3px solid $main-yellow;
+         border-radius: 100px 100px 0 0;
+      }
+   }
+
+   &__expert-2 {
+      position: relative;
+      left: 267px;
+      top: 14%;
+      width: 32px;
+      height: 32px;
+      border-radius: 32px;
+      border: 2px solid $main-white;
+
+      background: url("../images/expert-2.jpg");
+      background-size: cover;
+      background-position: center;
+
+      &::before {
+         position: absolute;
+         content: "";
+         z-index: -1;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 50px;
+         height: 50px;
+         background-color: $background-purple;
+         border-radius: 50%;
+      }
+
+      &::after {
+         position: absolute;
+         content: "";
+         z-index: 1;
+         top: 1px;
+         right: -6px;
+         transform: translate(25%, -25%);
+         transform-origin: 0 50%;
+         width: 27px;
+         height: 53px;
+         border-top: 3px solid $main-purple;
+         border-right: 3px solid $main-purple;
+         border-bottom: 3px solid $main-purple;
+         border-radius: 0 100px 100px 0;
+      }
+   }
+}

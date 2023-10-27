@@ -1,0 +1,109 @@
+.header {
+   height: 100px;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   z-index: 1;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__logo {
+      display: block;
+      width: 37px;
+      height: 38px;
+
+      margin-right: 203px;
+      @media (max-width: 1750px) {
+         margin-right: 130px;
+      }
+   }
+
+   &__nav {
+      margin-right: 73px;
+      @media (max-width: $media1 + px) {
+         display: none;
+      }
+   }
+
+   &__localization {
+      margin-right: 76px;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+
+      font-family: SF Pro Text;
+      font-weight: 500;
+      color: $text-blue-gray;
+
+      transition: color 1s;
+
+      &:hover {
+         color: $background-grey;
+      }
+   }
+
+   &__phone-number {
+      margin: 0 15px 0 auto;
+      @media (max-width: 1750px) {
+         margin-left: 0;
+      }
+
+      font-family: Inter;
+      font-weight: 600;
+      color: $main-white;
+
+      &:hover {
+         text-decoration: underline;
+      }
+
+      @media (max-width: $media1 + px) {
+         display: none;
+      }
+   }
+}
+
+.nav {
+   &__list {
+      display: flex;
+   }
+
+   &__item {
+      position: relative;
+
+      &:not(:last-child) {
+         margin-right: 35px;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: -5px;
+         left: 50%;
+         transform: translateX(-50%);
+
+         width: 0;
+         height: 2px;
+         background-color: $main-green;
+         opacity: 0;
+
+         transition:
+            width 2s,
+            opacity 2s;
+      }
+      &:hover::after {
+         width: 100%;
+         opacity: 0.8;
+      }
+   }
+
+   &__link {
+      font-family: SF Pro Text;
+      font-weight: 500;
+      color: $text-dark-gray;
+   }
+}
