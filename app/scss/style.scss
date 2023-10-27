@@ -15,6 +15,14 @@ body {
    font-size: 16px;
    line-height: 1.25;
    color: $text-dark-gray;
+
+   @media (max-width: 610px) {
+      font-size: 14px;
+   }
+
+   &.lock {
+      overflow: hidden;
+   }
 }
 
 .wrapper {
@@ -38,6 +46,7 @@ body {
    }
    @media (max-width: $media3 + px) {
       max-width: none;
-      padding: 0 20px;
+      padding-right: 20px;
+      padding-left: 20px;
    }
 }

@@ -5,6 +5,10 @@
    top: 0;
    z-index: 1;
 
+   @media (max-width: $media2 + px) {
+      height: 80px;
+   }
+
    &__container {
       display: flex;
       justify-content: space-between;
@@ -41,6 +45,11 @@
       padding: 0;
       cursor: pointer;
 
+      @media (max-width: $media1 + px) {
+         margin-right: 40px;
+         margin-left: auto;
+      }
+
       font-family: SF Pro Text;
       font-weight: 500;
       color: $text-blue-gray;
@@ -48,7 +57,7 @@
       transition: color 1s;
 
       &:hover {
-         color: $background-grey;
+         color: $text-dark-gray;
       }
    }
 
