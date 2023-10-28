@@ -53,7 +53,15 @@
       transition: color 1s;
 
       &:hover {
-         color: $text-dark-gray;
+         color: $main-blue;
+      }
+
+      @media (min-width: 1218px) and (max-width: 1580px) {
+         width: 35px;
+         height: 35px;
+         text-align: center;
+         background-color: $background-grey;
+         border-radius: 50%;
       }
 
       @media (max-width: $media1 + px) {
