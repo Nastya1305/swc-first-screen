@@ -1,38 +1,38 @@
 .button {
-   cursor: pointer;
-   border: 0;
-   border-radius: 10px;
-   padding: 15px 25px;
-
    display: flex;
    align-items: center;
    justify-content: center;
+
+   padding: 15px 25px;
+   border-radius: 10px;
+   border: 0;
 
    background: $main-purple;
    color: $main-white;
    box-shadow: 0px 20px 35px 0px #dfe8f4;
 
    transition: background-color 1.4s;
+   cursor: pointer;
 
    &:hover {
       background-color: $main-green;
    }
 
    &_blue {
-      background: $main-blue;
       font-weight: 600;
+      background: $main-blue;
       box-shadow: none;
    }
 
    &_grey {
       background: transparent;
-      box-shadow: none;
       border: 2px solid $text-dark-gray;
       color: $text-dark-gray;
+      box-shadow: none;
 
       &:hover {
-         color: $main-purple;
          background: $background-purple;
+         color: $main-purple;
          border: 2px solid $main-purple;
       }
    }
@@ -49,8 +49,9 @@
    border-radius: 8px;
    border: 1px solid $text-light-gray;
    background-color: transparent;
-   cursor: pointer;
+
    transition: background-color 1.4s;
+   cursor: pointer;
 
    svg {
       fill: $text-dark-gray;
@@ -68,6 +69,7 @@
 
    &_without-border {
       border: 0;
+
       &:hover {
          background: transparent;
       }
