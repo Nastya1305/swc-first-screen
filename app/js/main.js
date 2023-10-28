@@ -1,3 +1,4 @@
+//--------------------------popup
 const popupOpen = document.querySelector('.popup-open-link');
 const popup = document.querySelector('.popup');
 
@@ -15,6 +16,17 @@ function closePopup(event) {
 
 }
 
-
 popup.addEventListener('click', closePopup)
 popupOpen.addEventListener('click', openPopup)
+
+
+//----------------------------------------menu burger
+
+const menuBurger = document.querySelector(".burger");
+
+if (menuBurger) {
+   menuBurger.addEventListener('click', function (e) {
+      menuBurger.classList.toggle("burger_close");
+   });
+}
+
