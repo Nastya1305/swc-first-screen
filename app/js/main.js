@@ -23,10 +23,13 @@ popupOpen.addEventListener('click', openPopup)
 //----------------------------------------menu burger
 
 const menuBurger = document.querySelector(".burger");
+const header = document.querySelector(".header");
 
 if (menuBurger) {
    menuBurger.addEventListener('click', function (e) {
       menuBurger.classList.toggle("burger_close");
+      header.classList.toggle("header_dropdown");
+      document.body.classList.toggle("lock");
    });
 }
 
