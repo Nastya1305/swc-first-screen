@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Техническая поддержка сайтов</title>
-   <link rel="icon" href="images/logo.svg" type="image/x-icon" />
+   <link rel="icon" href="images/sprite.svg#logo" type="image/x-icon" />
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -32,6 +32,7 @@
             <button class="header__localization">En</button>
             <a class="header__phone-number" href="tel:+74951234567">+7(495)-123-45-67</a>
             <button class="button button_blue popup-open-link">Контакты</button>
+            <div class="burger"><span></span></div>
          </div>
       </header>
 
@@ -100,9 +101,9 @@
                <div class="contacts__contacts-block contacts-block">
                   <dl class="contacts-block__list">
                      <dt>Звоните:</dt>
-                     <dd class="contacts__black-text">+7 (495) 123-45-67</dd>
+                     <dd><a href="tel:+74951234567" class="contacts__black-text">+7 (495) 123-45-67</a></dd>
                      <dt>Пишите:</dt>
-                     <dd class="contacts__black-text">info@test.ru</dd>
+                     <dd><a href="mailto:info@test.ru" class="contacts__black-text">info@test.ru</a></dd>
                   </dl>
                   <button class="button button_grey">Заказать звонок</button>
                </div>
